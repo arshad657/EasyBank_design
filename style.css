@@ -1,0 +1,100 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* navbar styles */
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 25px;
+    
+}
+.nav-image{
+    margin-top: 8px;
+}
+
+.nav-menu ul{
+    margin-top:  8px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.item{
+    margin-right: 40px;
+    color: gray;
+}
+.nav-menu ul li a, .nav-btn a{
+    text-decoration: none   ;
+}
+.nav-btn{
+    text-decoration: none;
+    margin-left: 100px;
+    padding-top: 8px;
+    height: 30px;
+    width: 150px;
+    background-image: linear-gradient(to right,rgb(60, 212, 54),rgb(64, 218, 158));
+    border-radius: 20px;  
+    color: white;
+    font-size: 20px;
+}
+.nav-btn:hover,.btn:hover {
+    transform: scale(1.2);
+}
+.nav-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* welcome section  */
+.welcome-section{
+    display: flex;
+    height: 650px;
+}
+.welcome-section img{
+    height: 742px;
+    margin-top: 38px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px 0 10px 15px;
+    height: 30px;
+    width: 130px;
+    background-image: linear-gradient(to right,rgb(60, 212, 54),rgb(64, 218, 158));
+    border-radius: 20px;  
+    color: white;
+    font-size: 20px;
+}
+.welcome-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+    width: 900px;
+}
+.welcome-info h2{
+    font-size: 55px;
+    
+}
+.welcome-info p{
+    font-size: 25px;
+    width: 600px;
+}
+
+
+/* second section  */
+.second-sec{
+    background-color: rgb(200, 200, 200);
+    height: 500px;
+    margin: 0;
+}
