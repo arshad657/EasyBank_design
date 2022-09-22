@@ -80,21 +80,143 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-left: 200px;
-    width: 900px;
+    width: 931px;
 }
 .welcome-info h2{
     font-size: 55px;
+    margin-bottom: 20px;
     
 }
-.welcome-info p{
-    font-size: 25px;
+.paragraph{
+    font-size: 20px;
     width: 600px;
+    color: gray;
 }
 
 
 /* second section  */
 .second-sec{
-    background-color: rgb(200, 200, 200);
-    height: 500px;
+    background-color: rgb(235, 235, 235);
     margin: 0;
+    padding: 50px 100px 50px 200px;
+}
+.sec-title{
+    font-size: 35px;
+}
+.details{
+    display: flex;
+    margin-top: 50px;
+}
+.details article{
+    width: 700px;
+}
+.details-paragraph{
+    font-size: 20px;
+    color: gray;
+    width: 300px;
+}
+
+
+/* article section  */
+.third-sec{
+    margin-top: -35px;
+    background-color: rgb(251, 247, 247);
+    padding: 20px 0px 80px 200px;
+}
+.articles{
+    display: flex;
+    
+}
+.articles article img{
+    width: 320px;
+    height: 250px;
+}
+.articles article{
+    background-color: white;
+    margin-right: 40px;
+    width: 320px;
+    border-radius: 20px;
+}
+.article-paragraph, .article-title{
+    padding-left: 20px;
+    padding-right: 10px; 
+}
+.article-paragraph{
+    color: gray;
+    font-size: 15px;
+}
+.article-title{
+    font-size: 25px;
+}
+
+
+/* footer section  */
+#footer-sec{
+    height: 200px;
+    background-color: rgba(17, 49, 75, 0.959);
+}
+
+
+/* media queries  */
+@media only screen and (max-width: 688px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .nav-btn{
+        margin-left: 50px;
+    }
+    .nav-menu ul{
+        font-size: 30px;
+        display: grid;
+        width: 100%;
+    }
+    .nav-menu ul li{
+        margin-top: 30px;
+    }
+
+    /* welcome section  */
+    .welcome-section,.welcome-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 411px;
+        margin: 0;
+    }
+    .paragraph{
+        width: 411px;
+    
+    }
+    .btn{
+        display: none;
+    }
+    .welcome-section img{
+        width: 411px;
+    }
+    .second-sec{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .details{
+        margin-right: 60px;
+        width: 411px;
+        display: flex;
+        flex-direction: column; 
+        
+             
+    }
+    .details article{
+
+        width: 411px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    footer{
+        display: none;
+    }
 }
